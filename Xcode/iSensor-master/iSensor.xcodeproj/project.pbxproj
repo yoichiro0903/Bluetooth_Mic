@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		212CED7118377FB700A37755 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212CED7018377FB700A37755 /* Foundation.framework */; };
+		212CED7318377FB700A37755 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212CED7218377FB700A37755 /* CoreGraphics.framework */; };
+		212CED7518377FB700A37755 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212CED7418377FB700A37755 /* UIKit.framework */; };
+		212CED7B18377FB700A37755 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 212CED7918377FB700A37755 /* InfoPlist.strings */; };
+		212CED7D18377FB700A37755 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 212CED7C18377FB700A37755 /* main.m */; };
+		212CED8118377FB700A37755 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 212CED8018377FB700A37755 /* AppDelegate.m */; };
+		212CED8418377FB700A37755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212CED8218377FB700A37755 /* Main.storyboard */; };
+		212CED8918377FB700A37755 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212CED8818377FB700A37755 /* Images.xcassets */; };
+		212CED9018377FB700A37755 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212CED8F18377FB700A37755 /* XCTest.framework */; };
+		212CED9118377FB700A37755 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212CED7018377FB700A37755 /* Foundation.framework */; };
+		212CED9218377FB700A37755 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212CED7418377FB700A37755 /* UIKit.framework */; };
+		212CED9A18377FB700A37755 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 212CED9818377FB700A37755 /* InfoPlist.strings */; };
+		212CED9C18377FB700A37755 /* iSensorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 212CED9B18377FB700A37755 /* iSensorTests.m */; };
+		212CEDA71837C8BC00A37755 /* ProximityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212CEDA61837C8BC00A37755 /* ProximityViewController.m */; };
+		212CEDAA18384DDD00A37755 /* BrightnessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212CEDA918384DDD00A37755 /* BrightnessViewController.m */; };
+		212CEDAD1838B2B200A37755 /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212CEDAC1838B2B200A37755 /* ShakeViewController.m */; };
+		2148BA641A58D45E00972930 /* SpeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2148BA631A58D45E00972930 /* SpeedViewController.m */; };
+		215A92931849057700E1C0E9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215A92921849057700E1C0E9 /* CoreImage.framework */; };
+		21705E3A184F7A4400E06BF1 /* BatteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21705E39184F7A4400E06BF1 /* BatteryViewController.m */; };
+		21A84528183F075D000EAE80 /* HeadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A84527183F075D000EAE80 /* HeadingViewController.m */; };
+		21A8452A183F1906000EAE80 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A84529183F1906000EAE80 /* CoreLocation.framework */; };
+		21A8452D183F5DC0000EAE80 /* AltitudeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A8452C183F5DC0000EAE80 /* AltitudeViewController.m */; };
+		21A8453318407916000EAE80 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A8453218407916000EAE80 /* LocationViewController.m */; };
+		21A845361840BC66000EAE80 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A845351840BC66000EAE80 /* AudioViewController.m */; };
+		21A8453A1843A204000EAE80 /* AccelerometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A845391843A204000EAE80 /* AccelerometerViewController.m */; };
+		21A8453C1843AEF9000EAE80 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A8453B1843AEF9000EAE80 /* CoreMotion.framework */; };
+		21A8453F1844DE88000EAE80 /* MotionActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A8453E1844DE88000EAE80 /* MotionActivityViewController.m */; };
+		21DCAFC61848F7BB00EF9882 /* FaceDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DCAFC51848F7BB00EF9882 /* FaceDetectionViewController.m */; };
+		461DC2341DC4D1CE007FDA9B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 461DC2331DC4D1CD007FDA9B /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		212CED9318377FB700A37755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 212CED6518377FB700A37755 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 212CED6C18377FB700A37755;
+			remoteInfo = iSensor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		212CED6D18377FB700A37755 /* iSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		212CED7018377FB700A37755 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		212CED7218377FB700A37755 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		212CED7418377FB700A37755 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		212CED7818377FB700A37755 /* iSensor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSensor-Info.plist"; sourceTree = "<group>"; };
+		212CED7A18377FB700A37755 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		212CED7C18377FB700A37755 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		212CED7E18377FB700A37755 /* iSensor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSensor-Prefix.pch"; sourceTree = "<group>"; };
+		212CED7F18377FB700A37755 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		212CED8018377FB700A37755 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		212CED8318377FB700A37755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		212CED8818377FB700A37755 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		212CED8E18377FB700A37755 /* iSensorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSensorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		212CED8F18377FB700A37755 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		212CED9718377FB700A37755 /* iSensorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSensorTests-Info.plist"; sourceTree = "<group>"; };
+		212CED9918377FB700A37755 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		212CED9B18377FB700A37755 /* iSensorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSensorTests.m; sourceTree = "<group>"; };
+		212CEDA51837C8BC00A37755 /* ProximityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProximityViewController.h; sourceTree = "<group>"; };
+		212CEDA61837C8BC00A37755 /* ProximityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProximityViewController.m; sourceTree = "<group>"; };
+		212CEDA818384DDD00A37755 /* BrightnessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightnessViewController.h; sourceTree = "<group>"; };
+		212CEDA918384DDD00A37755 /* BrightnessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightnessViewController.m; sourceTree = "<group>"; };
+		212CEDAB1838B2B200A37755 /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
+		212CEDAC1838B2B200A37755 /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		2148BA621A58D45E00972930 /* SpeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedViewController.h; sourceTree = "<group>"; };
+		2148BA631A58D45E00972930 /* SpeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedViewController.m; sourceTree = "<group>"; };
+		215A92921849057700E1C0E9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		21705E38184F7A4400E06BF1 /* BatteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryViewController.h; sourceTree = "<group>"; };
+		21705E39184F7A4400E06BF1 /* BatteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryViewController.m; sourceTree = "<group>"; };
+		21A84526183F075D000EAE80 /* HeadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadingViewController.h; sourceTree = "<group>"; };
+		21A84527183F075D000EAE80 /* HeadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadingViewController.m; sourceTree = "<group>"; };
+		21A84529183F1906000EAE80 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		21A8452B183F5DC0000EAE80 /* AltitudeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AltitudeViewController.h; sourceTree = "<group>"; };
+		21A8452C183F5DC0000EAE80 /* AltitudeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AltitudeViewController.m; sourceTree = "<group>"; };
+		21A8453118407916000EAE80 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		21A8453218407916000EAE80 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		21A845341840BC66000EAE80 /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		21A845351840BC66000EAE80 /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		21A845381843A204000EAE80 /* AccelerometerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerViewController.h; sourceTree = "<group>"; };
+		21A845391843A204000EAE80 /* AccelerometerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerViewController.m; sourceTree = "<group>"; };
+		21A8453B1843AEF9000EAE80 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		21A8453D1844DE88000EAE80 /* MotionActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionActivityViewController.h; sourceTree = "<group>"; };
+		21A8453E1844DE88000EAE80 /* MotionActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionActivityViewController.m; sourceTree = "<group>"; };
+		21DCAFC41848F7BB00EF9882 /* FaceDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectionViewController.h; sourceTree = "<group>"; };
+		21DCAFC51848F7BB00EF9882 /* FaceDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetectionViewController.m; sourceTree = "<group>"; };
+		461DC2331DC4D1CD007FDA9B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		212CED6A18377FB700A37755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				215A92931849057700E1C0E9 /* CoreImage.framework in Frameworks */,
+				21A8453C1843AEF9000EAE80 /* CoreMotion.framework in Frameworks */,
+				21A8452A183F1906000EAE80 /* CoreLocation.framework in Frameworks */,
+				212CED7318377FB700A37755 /* CoreGraphics.framework in Frameworks */,
+				212CED7518377FB700A37755 /* UIKit.framework in Frameworks */,
+				212CED7118377FB700A37755 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212CED8B18377FB700A37755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212CED9018377FB700A37755 /* XCTest.framework in Frameworks */,
+				212CED9218377FB700A37755 /* UIKit.framework in Frameworks */,
+				212CED9118377FB700A37755 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		212CED6418377FB700A37755 = {
+			isa = PBXGroup;
+			children = (
+				461DC2331DC4D1CD007FDA9B /* Default-568h@2x.png */,
+				212CED7618377FB700A37755 /* iSensor */,
+				212CED9518377FB700A37755 /* iSensorTests */,
+				212CED6F18377FB700A37755 /* Frameworks */,
+				212CED6E18377FB700A37755 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		212CED6E18377FB700A37755 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				212CED6D18377FB700A37755 /* iSensor.app */,
+				212CED8E18377FB700A37755 /* iSensorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		212CED6F18377FB700A37755 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				215A92921849057700E1C0E9 /* CoreImage.framework */,
+				21A84529183F1906000EAE80 /* CoreLocation.framework */,
+				21A8453B1843AEF9000EAE80 /* CoreMotion.framework */,
+				212CED7018377FB700A37755 /* Foundation.framework */,
+				212CED7218377FB700A37755 /* CoreGraphics.framework */,
+				212CED7418377FB700A37755 /* UIKit.framework */,
+				212CED8F18377FB700A37755 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		212CED7618377FB700A37755 /* iSensor */ = {
+			isa = PBXGroup;
+			children = (
+				21A845371840BC7E000EAE80 /* Controller */,
+				212CED7F18377FB700A37755 /* AppDelegate.h */,
+				212CED8018377FB700A37755 /* AppDelegate.m */,
+				212CED8218377FB700A37755 /* Main.storyboard */,
+				212CED8818377FB700A37755 /* Images.xcassets */,
+				212CED7718377FB700A37755 /* Supporting Files */,
+			);
+			path = iSensor;
+			sourceTree = "<group>";
+		};
+		212CED7718377FB700A37755 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				212CED7818377FB700A37755 /* iSensor-Info.plist */,
+				212CED7918377FB700A37755 /* InfoPlist.strings */,
+				212CED7C18377FB700A37755 /* main.m */,
+				212CED7E18377FB700A37755 /* iSensor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		212CED9518377FB700A37755 /* iSensorTests */ = {
+			isa = PBXGroup;
+			children = (
+				212CED9B18377FB700A37755 /* iSensorTests.m */,
+				212CED9618377FB700A37755 /* Supporting Files */,
+			);
+			path = iSensorTests;
+			sourceTree = "<group>";
+		};
+		212CED9618377FB700A37755 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				212CED9718377FB700A37755 /* iSensorTests-Info.plist */,
+				212CED9818377FB700A37755 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21A845371840BC7E000EAE80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				212CEDA51837C8BC00A37755 /* ProximityViewController.h */,
+				212CEDA61837C8BC00A37755 /* ProximityViewController.m */,
+				212CEDA818384DDD00A37755 /* BrightnessViewController.h */,
+				212CEDA918384DDD00A37755 /* BrightnessViewController.m */,
+				212CEDAB1838B2B200A37755 /* ShakeViewController.h */,
+				212CEDAC1838B2B200A37755 /* ShakeViewController.m */,
+				21A8453118407916000EAE80 /* LocationViewController.h */,
+				21A8453218407916000EAE80 /* LocationViewController.m */,
+				21A84526183F075D000EAE80 /* HeadingViewController.h */,
+				21A84527183F075D000EAE80 /* HeadingViewController.m */,
+				21A8452B183F5DC0000EAE80 /* AltitudeViewController.h */,
+				21A8452C183F5DC0000EAE80 /* AltitudeViewController.m */,
+				21A845341840BC66000EAE80 /* AudioViewController.h */,
+				21A845351840BC66000EAE80 /* AudioViewController.m */,
+				21A845381843A204000EAE80 /* AccelerometerViewController.h */,
+				21A845391843A204000EAE80 /* AccelerometerViewController.m */,
+				21A8453D1844DE88000EAE80 /* MotionActivityViewController.h */,
+				21A8453E1844DE88000EAE80 /* MotionActivityViewController.m */,
+				21DCAFC41848F7BB00EF9882 /* FaceDetectionViewController.h */,
+				21DCAFC51848F7BB00EF9882 /* FaceDetectionViewController.m */,
+				21705E38184F7A4400E06BF1 /* BatteryViewController.h */,
+				21705E39184F7A4400E06BF1 /* BatteryViewController.m */,
+				2148BA621A58D45E00972930 /* SpeedViewController.h */,
+				2148BA631A58D45E00972930 /* SpeedViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		212CED6C18377FB700A37755 /* iSensor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212CED9F18377FB700A37755 /* Build configuration list for PBXNativeTarget "iSensor" */;
+			buildPhases = (
+				212CED6918377FB700A37755 /* Sources */,
+				212CED6A18377FB700A37755 /* Frameworks */,
+				212CED6B18377FB700A37755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSensor;
+			productName = iSensor;
+			productReference = 212CED6D18377FB700A37755 /* iSensor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		212CED8D18377FB700A37755 /* iSensorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212CEDA218377FB700A37755 /* Build configuration list for PBXNativeTarget "iSensorTests" */;
+			buildPhases = (
+				212CED8A18377FB700A37755 /* Sources */,
+				212CED8B18377FB700A37755 /* Frameworks */,
+				212CED8C18377FB700A37755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				212CED9418377FB700A37755 /* PBXTargetDependency */,
+			);
+			name = iSensorTests;
+			productName = iSensorTests;
+			productReference = 212CED8E18377FB700A37755 /* iSensorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		212CED6518377FB700A37755 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Kosuke Ogawa";
+				TargetAttributes = {
+					212CED6C18377FB700A37755 = {
+						DevelopmentTeam = WD3RF9WZQG;
+						ProvisioningStyle = Automatic;
+					};
+					212CED8D18377FB700A37755 = {
+						TestTargetID = 212CED6C18377FB700A37755;
+					};
+				};
+			};
+			buildConfigurationList = 212CED6818377FB700A37755 /* Build configuration list for PBXProject "iSensor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 212CED6418377FB700A37755;
+			productRefGroup = 212CED6E18377FB700A37755 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				212CED6C18377FB700A37755 /* iSensor */,
+				212CED8D18377FB700A37755 /* iSensorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		212CED6B18377FB700A37755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212CED8918377FB700A37755 /* Images.xcassets in Resources */,
+				461DC2341DC4D1CE007FDA9B /* Default-568h@2x.png in Resources */,
+				212CED7B18377FB700A37755 /* InfoPlist.strings in Resources */,
+				212CED8418377FB700A37755 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212CED8C18377FB700A37755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212CED9A18377FB700A37755 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		212CED6918377FB700A37755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212CEDAD1838B2B200A37755 /* ShakeViewController.m in Sources */,
+				21DCAFC61848F7BB00EF9882 /* FaceDetectionViewController.m in Sources */,
+				21A84528183F075D000EAE80 /* HeadingViewController.m in Sources */,
+				21A8453F1844DE88000EAE80 /* MotionActivityViewController.m in Sources */,
+				2148BA641A58D45E00972930 /* SpeedViewController.m in Sources */,
+				21705E3A184F7A4400E06BF1 /* BatteryViewController.m in Sources */,
+				21A845361840BC66000EAE80 /* AudioViewController.m in Sources */,
+				212CEDA71837C8BC00A37755 /* ProximityViewController.m in Sources */,
+				21A8453318407916000EAE80 /* LocationViewController.m in Sources */,
+				212CEDAA18384DDD00A37755 /* BrightnessViewController.m in Sources */,
+				212CED8118377FB700A37755 /* AppDelegate.m in Sources */,
+				21A8452D183F5DC0000EAE80 /* AltitudeViewController.m in Sources */,
+				21A8453A1843A204000EAE80 /* AccelerometerViewController.m in Sources */,
+				212CED7D18377FB700A37755 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212CED8A18377FB700A37755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212CED9C18377FB700A37755 /* iSensorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		212CED9418377FB700A37755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 212CED6C18377FB700A37755 /* iSensor */;
+			targetProxy = 212CED9318377FB700A37755 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		212CED7918377FB700A37755 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				212CED7A18377FB700A37755 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		212CED8218377FB700A37755 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				212CED8318377FB700A37755 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		212CED9818377FB700A37755 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				212CED9918377FB700A37755 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		212CED9D18377FB700A37755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		212CED9E18377FB700A37755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		212CEDA018377FB700A37755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WD3RF9WZQG;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSensor/iSensor-Prefix.pch";
+				INFOPLIST_FILE = "iSensor/iSensor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_BUNDLE_IDENTIFIER = Myapp.iSensor.yoichiro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		212CEDA118377FB700A37755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WD3RF9WZQG;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSensor/iSensor-Prefix.pch";
+				INFOPLIST_FILE = "iSensor/iSensor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_BUNDLE_IDENTIFIER = Myapp.iSensor.yoichiro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		212CEDA318377FB700A37755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iSensor.app/iSensor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSensor/iSensor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iSensorTests/iSensorTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Myapp.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		212CEDA418377FB700A37755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iSensor.app/iSensor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSensor/iSensor-Prefix.pch";
+				INFOPLIST_FILE = "iSensorTests/iSensorTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Myapp.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		212CED6818377FB700A37755 /* Build configuration list for PBXProject "iSensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212CED9D18377FB700A37755 /* Debug */,
+				212CED9E18377FB700A37755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		212CED9F18377FB700A37755 /* Build configuration list for PBXNativeTarget "iSensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212CEDA018377FB700A37755 /* Debug */,
+				212CEDA118377FB700A37755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		212CEDA218377FB700A37755 /* Build configuration list for PBXNativeTarget "iSensorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212CEDA318377FB700A37755 /* Debug */,
+				212CEDA418377FB700A37755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 212CED6518377FB700A37755 /* Project object */;
+}

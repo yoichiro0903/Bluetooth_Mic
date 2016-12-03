@@ -1,0 +1,54 @@
+AudioDemo.zip
+┗　https://www.appcoda.com/ios-avfoundation-framework-tutorial/	
+┗　完成形版。notテンプレート。
+┗　AVAudioSessionでm4aファイル形式で音声ファイルを保存、再生できる。
+
+AudioDemoNoSynthesize
+┗　@propertyとか使ってAudioDemo.zipを展開したものを書き換え。
+┗　各メソッド内でいちいちsharedInstanceしてたのを削除。
+┗　ログもちょっと追加。
+
+[gitignore]AutoRecordRecognition
+┗　いろいろいじくってるやつ。Workspaceに。
+
+BLESerial2_test_iPhone（.lzhは元ファイル）
+┗　http://www.robotsfx.com/robot/img/radio/BLESerial/BLESerial2_how2.html
+┗　iOSとBLE機器でSerial通信できる。内実はcorebluetoothのようなので放置。
+┗　浅草ギ研。
+
+[gitignore]GoogleSpeechAPI_Sample-master_withAPIkey（GoogleSpeechAPI_Sample-master.zipは元ファイル）
+┗　google.com/speech-api/v2/（not Cloud API）の音声認識サンプル。
+┗　http://qiita.com/satoshi0212/items/af4928b808b4fbba8091
+┗　not公式。
+┗　GoogleSpeechAPI_Sample-master.zipを展開して利用可能なAPIßキーを入れたもの。
+┗　https://www.google.com/speech-api/v2/recognize?lang=ja-jp&key=（たぶんdevグループにはいるやつ	）で認識。
+
+[gitignore]GoogleSpeechCloud_Speech-REST-Nonstreaming（GoogleSpeechCloud_Speech.zipは元ファイル）
+┗　https://github.com/GoogleCloudPlatform/ios-docs-samples
+┗　GoogleSpeechCloud_Speech.zip（ios-docs-samples-master.zipをリネーム）を展開したもの。
+┗　Obj-CのSpeech-REST-NonstreamingプロジェクトにAPIキーをいれたもの。
+┗　GoogleCloudSpeechRecognitionの正式サンプル。
+┗　https:/speech.googleapis.com/v1beta1/speech:syncrecognize（Cloud API）で認識。
+
+iSensor-master（.zipは元ファイル）
+┗　http://blog.koogawa.com/entry/2013/11/24/121807
+┗　AudioToolbox（AudioQueueRef）を使ってマイクの音量を検知する。
+┗　他にもいろんなセンサー系が入ってる。
+
+testDictation-master_mod（testDictation-master.zipは元ファイル）
+┗　UIDictationControllerでの音声認識サンプル。
+┗　testDictation-master.zipを展開して、performSelectorをコメントアウトしてわかりやすくしたもの。
+┗　https://github.com/c-geru/testDictation/tree/master/testDictation
+┗　http://c-geru.com/as_blind_side/2014/11/uidictationcontroller.html
+
+[gitignore]testGoogleCloudSpeech
+┗　speech.googleapis.com/v1beta1（Cloud API beta）の音声認識テストコード。
+┗　https://github.com/GoogleCloudPlatform/ios-docs-samplesからの一部切り出し。
+┗　https:/speech.googleapis.com/v1beta1/speech:syncrecognize（Cloud API beta）で認識。
+
+
+
+
+
+
+
